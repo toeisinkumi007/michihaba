@@ -1,5 +1,5 @@
 // 電波のない山の中でも開けるよう、一度開いたページを端末に保存しておく
-const CACHE = 'michihaba-v2';
+const CACHE = 'michihaba-v3';
 const FILES = ['./', './index.html'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener('activate', e => {
